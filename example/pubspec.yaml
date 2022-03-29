@@ -30,13 +30,16 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  get: 4.3.8
-  syncfusion_flutter_sliders: 19.3.45
+  get: 4.6.1
+  syncfusion_flutter_sliders: 19.4.50
   mr_skeleton:
-    path: ../
+    git:
+      url: git@github.com:LuisBurgos/mr_skeleton.git
+      ref: main
   resonant_ui:
-    path: ../../../packages/resonant_ui
+    git:
+      url: git@github.com:LuisBurgos/resonant_ui.git
+      ref: main
 
 dev_dependencies:
   flutter_test:
