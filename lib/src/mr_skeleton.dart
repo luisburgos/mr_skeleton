@@ -58,7 +58,7 @@ class MRSkeleton extends StatelessWidget {
         MediaQuery.of(context).size.width >= desktopBreakpointWidth;
 
     if (onDesktopBreakpointChanged != null) {
-      WidgetsBinding.instance!.addPostFrameCallback((_) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
         onDesktopBreakpointChanged!(isDesktop);
       });
     }
