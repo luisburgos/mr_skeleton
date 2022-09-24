@@ -1,3 +1,3 @@
-# Resonant UI
+# MRSkeleton
 
 TODO: Add docs
