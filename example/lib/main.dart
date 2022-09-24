@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mr_skeleton/mr_skeleton.dart';
-import 'package:syncfusion_flutter_sliders/sliders.dart';
 import 'package:resonant_ui/resonant_ui.dart';
+import 'package:syncfusion_flutter_sliders/sliders.dart';
 
 void main() {
   runApp(const MyApp());
@@ -460,18 +460,19 @@ class _RightWidget extends StatelessWidget {
 }
 
 class _CircularLetter extends StatelessWidget {
-  final Function()? onTap;
-  final EdgeInsets? padding;
-  final String letter;
-  final Color? color;
-
   const _CircularLetter({
     Key? key,
+    // ignore: unused_element
     this.onTap,
     this.padding,
     required this.letter,
     this.color = Colors.transparent,
   }) : super(key: key);
+
+  final Function()? onTap;
+  final EdgeInsets? padding;
+  final String letter;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -534,12 +535,12 @@ class SkeletonDemoStateController extends GetxController {
   String get currentRoute => Get.currentRoute;
 
   void toggleLeftSide() {
-    print('toggleLeftSide');
+    //print('toggleLeftSide');
     isLeftSideMenuExpanded.toggle();
   }
 
   void toggleRightSide() {
-    print('toggleRightSide');
+    //print('toggleRightSide');
     isRightSideMenuExpanded.toggle();
   }
 
@@ -551,7 +552,7 @@ class SkeletonDemoStateController extends GetxController {
 
   void changePage(int? index) {
     currentIndex.value = index ?? 0;
-    print('changePage: $index');
+    //print('changePage: $index');
 
     /// TODO: Notify current index changed.
   }
